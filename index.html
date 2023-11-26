@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Star Wars</title>
+  </head>
+  <body>
+    <header class="imgContainer">
+      <h1 class="headerH">
+        STAR WARS <br />
+        CATALOG
+      </h1>
+    </header>
+
+    <main class="divsContainer">
+      <div id="charcter">
+        <h1 class="charcterHeader">Charcter</h1>
+        <ul id="theList"></ul>
+      </div>
+
+      <div id="theDetails">
+        <section id="detailsOne">
+          <h1 class="oneHeader">Details</h1>
+          <h1 id="detailsUpHeader"></h1>
+          <ul id="detailsList"></ul>
+        </section>
+
+        <!-- alla fyra sektioner-->
+        <section id="detailsTwo">
+          <div class="btns">
+            <button onclick="changeClassPlanet()" id="planetBtn">Planet</button>
+            <button onclick="changeClassSpecies()" id="speciesBtn">
+              Species
+            </button>
+            <button onclick="changeClassVehicles()" id="vehiclesBtn">
+              Vehicles
+            </button>
+            <!--<button onclick="changeClassStarships()" id="starshipsBtn">
+              Starships
+            </button>-->
+          </div>
+
+          <!-- Planet -->
+
+          <article class="hide" id="planetPart">
+            <h2 id="planetHeader"></h2>
+            <ul id="planetList"></ul>
+          </article>
+
+          <!-- Species -->
+          <article class="hide" id="speciesPart">
+            <h2 id="speciesHeader"></h2>
+            <ul id="speciesList"></ul>
+          </article>
+
+          <!-- Vehicles -->
+          <article class="hide" id="vehiclesPart">
+            <h2 id="vehiclesHeader"></h2>
+            <ul id="vehiclesList"></ul>
+          </article>
+
+          <!-- Starships -->
+          <article class="hide" id="starshipsPart">
+            <h2 id="starshipsHeader"></h2>
+            <ul id="starshipsList"></ul>
+          </article>
+        </section>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

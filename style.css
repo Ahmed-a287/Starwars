@@ -1,0 +1,244 @@
+body{
+    width: 70vw;
+    margin: auto auto;
+}
+main{
+    background-color: rgb(65, 65, 65);
+}
+
+/***** The Header *****/
+header{
+    display: flex;
+    background-image:url(./Starwars.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size:cover;
+}
+.headerH{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    align-items:center ;
+    color: yellow;
+    margin-left: 2rem;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-size: 5rem;
+}
+
+/***** The Divs *****/
+.divsContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+/***** The charcter div *****/
+#charcter{
+    background-color:rgb(191, 191, 191);
+    width: 550px;
+    height: 400px;
+    margin:-2rem;
+    border-radius: 5px;
+    height: 80vh;
+    flex-direction: column;
+    
+}
+
+.charcterHeader{
+    font-family:'Courier New', Courier, monospace;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(81, 81, 81);
+    height: 60px;
+    margin-top: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: xx-large;
+    letter-spacing: 0.3rem;
+}
+
+#theList{
+    list-style: none;
+    padding: 0;
+    margin-top: -1.2rem;
+}
+
+#btn0, #btn2, #btn4, #btn6, #btn8{
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: rgb(169, 169, 169);
+    width: 100%;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    border-style:none;
+    letter-spacing: 0.2rem;
+}
+#btn1, #btn3, #btn5, #btn7, #btn9{
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    border-style: none;
+    letter-spacing: 0.2rem;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover, #btn6:hover, #btn7:hover, #btn8:hover, #btn9:hover {
+    background-color: rgb(119, 119, 119);
+    color: white;
+}
+
+
+/***** The Detials UP *****/
+.oneHeader{font-family:'Courier New', Courier, monospace;
+    background-color: rgb(108, 131, 123);
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: xx-large;
+    letter-spacing: 0.3rem;
+}
+
+#theDetails{
+    
+    background: linear-gradient(
+    to top,
+    rgb(150, 150, 150) 0%,
+    rgb(150, 150, 150) 40%,
+    rgb(224, 224, 224) 40%,
+    rgb(224, 224, 224) 100%
+    );
+    width: 550px;
+    height: 400px;
+    margin:-2rem;
+    border-radius: 5px;
+    height: 80vh;
+    flex-direction: column;
+}
+
+#detailsUpHeader {
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+    letter-spacing: 0.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 0;
+}
+
+#upItem{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    list-style:none ;
+    letter-spacing: 0.1rem;
+    margin-top: -2rem;
+}
+
+/***** The Detials DOWN *****/
+#detailsTwo{
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: row;
+}
+/* Alla Artiklar */
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+#planetPart{
+    margin-left: -25rem;
+}
+
+#speciestPart{
+    margin-left: -10rem;
+}
+
+#vehiclesPart{
+    margin-left: -24rem;
+}
+
+#planetHeader, #speciesHeader, #vehiclesHeader, #starshipsHeader {
+    font-family:'Courier New', Courier, monospace;
+    font-size: xx-large;
+    color: rgb(241, 241, 241);
+    margin-top: 3rem;
+    margin-left: 2.3rem;
+    margin-bottom: 0rem;
+    letter-spacing: 1rem;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 2rem;
+}
+
+#planetBtn, #speciesBtn, #vehiclesBtn, #starshipsBtn{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    background-color:rgb(255, 255, 255);
+    color: rgb(161, 161, 0);
+    width: auto;
+    height: 2rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
+    border-style: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+/***** The Planet *****/
+#planetList{
+
+    width: 400px;
+    margin-left: -20rem;
+}
+/***** The Species *****/
+#speciesList{
+    margin-left: -22rem;
+}
+#speciesHeader{
+    margin-left: -7rem;
+}
+/***** The Vehicles *****/
+#vehiclesList{
+    margin-top: 4rem;
+    margin-left: -22rem;
+}
+#vehiclesHeader{
+    margin-left: 17rem;
+}
+#planetItem, #speicesItem, #vehiclesItem, #starshipsItem {
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(238, 238, 238);
+    font-weight: bolder;
+    font-size: x-large;
+    list-style:none ;
+    letter-spacing: 0.1rem;
+    margin-top: 3rem;
+}
